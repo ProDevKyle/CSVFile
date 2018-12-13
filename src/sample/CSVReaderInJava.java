@@ -23,7 +23,8 @@ public class CSVReaderInJava
         List<Book> books = readBooksFromCSV("src/sample/Books.txt");
 
         // let's print all the person read from CSV file
-        for (Book b : books) {
+        for (Book b : books)
+        {
             System.out.println(b);
         }
     }
@@ -43,7 +44,8 @@ public class CSVReaderInJava
             String line = br.readLine();
 
             // loop until all lines are read
-            while (line != null) {
+            while (line != null)
+            {
 
                 // use string.split to load a string array with the values from
                 // each line of
@@ -60,7 +62,8 @@ public class CSVReaderInJava
                 line = br.readLine();
             }
 
-        } catch (IOException ioe)
+        }
+        catch (IOException ioe)
         {
             ioe.printStackTrace();
         }
@@ -80,7 +83,8 @@ public class CSVReaderInJava
 
 }
 
-class Book {
+class Book
+{
     private String name;
     private int price;
     private String author;
